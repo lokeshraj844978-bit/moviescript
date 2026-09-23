@@ -8,7 +8,7 @@ from groq import Groq
 
 st.set_page_config(page_title="Video to Script Generator", page_icon="🎬", layout="centered")
 
-GROQ_API_KEY = "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
+GROQ_API_KEY = "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"
 
 client = Groq(api_key=GROQ_API_KEY)
 
