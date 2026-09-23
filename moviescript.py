@@ -101,9 +101,12 @@ def get_audio(video_url):
         'quiet': True,
         'no_warnings': True,
         'nocheckcertificate': True,
+        'extractor_retries': 5, 
+        'fragment_retries': 5,  
+        'retries': 5,           
         'extractor_args': {
             'youtube': {
-                'player_client': ['android', 'web']
+                'player_client': ['ios', 'android', 'web', 'mweb'] 
             }
         },
         'http_headers': {
